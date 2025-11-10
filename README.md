@@ -1,11 +1,15 @@
-# Hi 👋, I'm Rex W. Sitti
+# Hi 👋, I'm **Rex W. Sitti**
 ### Assistant Professor of Economics | Public, Urban, and Health Economist
 
+> Urban Economist and Assistant Professor at Old Dominion University’s Strome College of Business.  
+> My research examines how housing programs, safety nets, and environmental challenges affect communities and economic well-being.
+
 ---
-  
-  ## 🧠 About Me
-  I am an **Assistant Professor of Economics** at the **Strome College of Business, Old Dominion University**.  
+
+## 🧠 About Me
+I am an **Assistant Professor of Economics** at the **Strome College of Business, Old Dominion University**.  
 My work bridges **public, urban, and health economics**, focusing on how housing programs and safety nets affect individual and neighborhood outcomes.
+
 
 My research explores:
   - 🏠 The impacts of **homeless shelters and housing programs** on property values and neighborhood well-being  
@@ -129,3 +133,4 @@ American Economic Association • ASHEcon • Western Economic Association • M
 - **Twitter:** [@rexsitti](https://twitter.com/rexsitti)  
 
 > *“Using data to improve public resource management and the effectiveness of safety net programs.”*
+
