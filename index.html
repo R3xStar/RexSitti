@@ -1,1105 +1,136 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<style>html{color-scheme:light dark}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rex W. Sitti | Assistant Professor of Economics</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9fafb;
+            color: #111827;
+        }
+        header {
+            background: #1f2937;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.4rem;
+            font-weight: 700;
+        }
+        h2 {
+            color: #1f2937;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 6px;
+        }
+        .container {
+            max-width: 860px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .links {
+            list-style: none;
+            padding-left: 0;
+        }
+        .links li {
+            margin-bottom: 8px;
+        }
+        .links span {
+            color: #6b7280;
+        }
+    </style>
 </head>
 <body>
-<title>Sitti Teaching Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
 
-<style>
-:root{
-  --ground:#F1F4F4;
-  --surface:#FFFFFF;
-  --surface-2:#E9EEEE;
-  --ink:#131E1F;
-  --ink-2:#3C4B4C;
-  --muted:#657677;
-  --rule:#D6DEDE;
-  --rule-strong:#B6C3C3;
-  --accent:#00879B;
-  --accent-deep:#04616F;
-  --flag:#C2410C;
-  --accent-wash:rgba(0,135,155,.10);
-  --flag-wash:rgba(194,65,12,.10);
-  --shadow:0 1px 2px rgba(19,30,31,.05), 0 8px 24px -16px rgba(19,30,31,.28);
+<header>
+    <h1>Rex W. Sitti</h1>
+    <p>Assistant Professor of Economics | Public, Urban, and Health Economist</p>
+</header>
 
-  --serif:"Source Serif 4", ui-serif, Georgia, "Times New Roman", serif;
-  --sans:"IBM Plex Sans", ui-sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
-  --mono:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+<div class="container">
 
-  --measure:66ch;
-  --rail:16.5rem;
-}
-@media (prefers-color-scheme: dark){
-  :root:not([data-theme="light"]){
-    --ground:#0D1415;
-    --surface:#141E1F;
-    --surface-2:#22302F;
-    --ink:#E3EAEA;
-    --ink-2:#BCC9C9;
-    --muted:#8CA0A0;
-    --rule:#263435;
-    --rule-strong:#3A4A4B;
-    --accent:#149AAF;
-    --accent-deep:#4FC0D2;
-    --flag:#D97430;
-    --accent-wash:rgba(20,154,175,.14);
-    --flag-wash:rgba(217,116,48,.14);
-    --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
-  }
-}
-:root[data-theme="dark"]{
-  --ground:#0D1415;
-  --surface:#141E1F;
-  --surface-2:#1B2627;
-  --ink:#E3EAEA;
-  --ink-2:#BCC9C9;
-  --muted:#8CA0A0;
-  --rule:#263435;
-  --rule-strong:#3A4A4B;
-  --accent:#149AAF;
-  --accent-deep:#4FC0D2;
-  --flag:#D97430;
-  --accent-wash:rgba(20,154,175,.14);
-  --flag-wash:rgba(217,116,48,.14);
-  --shadow:0 1px 2px rgba(0,0,0,.4), 0 8px 24px -16px rgba(0,0,0,.8);
-}
-
-*{box-sizing:border-box}
-body{
-  margin:0;
-  background:var(--ground);
-  color:var(--ink);
-  font-family:var(--sans);
-  font-size:16px;
-  line-height:1.6;
-  -webkit-font-smoothing:antialiased;
-}
-h1,h2,h3,h4{font-family:var(--serif); text-wrap:balance; margin:0; line-height:1.2; letter-spacing:-.01em}
-p{margin:0}
-a{color:var(--accent-deep); text-underline-offset:.18em; text-decoration-thickness:.06em}
-a:focus-visible,button:focus-visible,summary:focus-visible{outline:2px solid var(--accent); outline-offset:3px; border-radius:2px}
-
-/* ---------- shell ---------- */
-.shell{display:grid; grid-template-columns:var(--rail) minmax(0,1fr); gap:0; min-height:100vh}
-
-.rail{
-  position:sticky; top:0; align-self:start; height:100vh; overflow-y:auto;
-  padding:2.25rem 1.4rem 2rem 2rem;
-  border-right:1px solid var(--rule);
-  background:var(--surface);
-  display:flex; flex-direction:column; gap:1.5rem;
-}
-.rail-id{display:flex; flex-direction:column; gap:.45rem}
-.rail-id .name{font-family:var(--serif); font-weight:700; font-size:1.18rem; line-height:1.15}
-.rail-id .role{font-size:.8rem; color:var(--muted); line-height:1.45}
-.stamp{
-  font-family:var(--mono); font-size:.66rem; letter-spacing:.11em; text-transform:uppercase;
-  color:var(--accent-deep); font-weight:600;
-}
-nav ol{list-style:none; margin:0; padding:0; display:flex; flex-direction:column; gap:.1rem}
-nav a{
-  display:flex; gap:.6rem; align-items:baseline;
-  padding:.34rem .5rem .34rem .55rem; border-radius:3px;
-  color:var(--ink-2); text-decoration:none; font-size:.855rem; line-height:1.35;
-  border-left:2px solid transparent;
-}
-nav a:hover{background:var(--surface-2); color:var(--ink)}
-nav a.on{border-left-color:var(--accent); color:var(--ink); font-weight:600; background:var(--accent-wash)}
-nav a .n{font-family:var(--mono); font-size:.68rem; color:var(--muted); min-width:1.1rem}
-nav a.on .n{color:var(--accent-deep)}
-nav .sub a{padding-left:2.15rem; font-size:.815rem}
-.rail-foot{margin-top:auto; font-size:.72rem; color:var(--muted); line-height:1.5; border-top:1px solid var(--rule); padding-top:.9rem}
-
-main{padding:3.5rem 3rem 6rem; min-width:0}
-.wrap{max-width:56rem; margin:0 auto}
-
-/* ---------- section scaffolding ---------- */
-section{padding-block:3.25rem; border-top:1px solid var(--rule)}
-section:first-of-type{border-top:0; padding-top:0}
-.sec-head{display:flex; flex-direction:column; gap:.55rem; margin-bottom:1.6rem}
-.sec-head h2{font-size:1.72rem; font-weight:600}
-.sec-head .lede{font-size:1.02rem; color:var(--ink-2); max-width:var(--measure)}
-.eyebrow{font-family:var(--mono); font-size:.68rem; letter-spacing:.13em; text-transform:uppercase; color:var(--muted); font-weight:500}
-.prose{max-width:var(--measure); display:flex; flex-direction:column; gap:1rem; font-size:1.005rem; color:var(--ink-2)}
-.prose strong{color:var(--ink); font-weight:600}
-.prose h3{font-size:1.14rem; margin-top:.9rem; color:var(--ink)}
-.prose ul{margin:0; padding-left:1.15rem; display:flex; flex-direction:column; gap:.55rem}
-
-/* masthead */
-.masthead{display:flex; flex-direction:column; gap:1.15rem; padding-bottom:.5rem}
-.masthead h1{font-size:clamp(2.1rem,4.4vw,3.05rem); font-weight:700; letter-spacing:-.025em}
-.masthead .sub{font-size:1.06rem; color:var(--ink-2); max-width:var(--measure)}
-.period{
-  display:inline-flex; align-items:center; gap:.55rem; align-self:flex-start;
-  font-family:var(--mono); font-size:.74rem; letter-spacing:.08em; text-transform:uppercase; font-weight:600;
-  color:var(--accent-deep); background:var(--accent-wash);
-  padding:.4rem .7rem; border-radius:3px;
-}
-
-/* ---------- ledger / cards ---------- */
-.figs{display:grid; grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr)); gap:1px; background:var(--rule); border:1px solid var(--rule); border-radius:4px; overflow:hidden; margin-block:1.75rem}
-.fig{background:var(--surface); padding:1rem 1.1rem; display:flex; flex-direction:column; gap:.25rem}
-.fig .v{font-family:var(--serif); font-size:1.95rem; font-weight:700; line-height:1; font-variant-numeric:tabular-nums; color:var(--ink)}
-.fig .k{font-size:.775rem; color:var(--muted); line-height:1.35}
-
-.tablewrap{overflow-x:auto; border:1px solid var(--rule); border-radius:4px; background:var(--surface)}
-table{border-collapse:collapse; width:100%; font-size:.865rem}
-caption{text-align:left; font-family:var(--mono); font-size:.68rem; letter-spacing:.11em; text-transform:uppercase; color:var(--muted); padding:.75rem 1rem .3rem}
-th,td{text-align:left; padding:.6rem .85rem; border-bottom:1px solid var(--rule); vertical-align:top}
-thead th{font-family:var(--mono); font-size:.66rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); font-weight:600; background:var(--surface-2); white-space:nowrap}
-tbody tr:last-child td{border-bottom:0}
-td.num,th.num{text-align:right; font-variant-numeric:tabular-nums; font-family:var(--mono); font-size:.82rem; white-space:nowrap}
-.course-cell{font-weight:600; color:var(--ink); white-space:nowrap}
-
-.card{background:var(--surface); border:1px solid var(--rule); border-radius:4px; padding:1.4rem 1.5rem; box-shadow:var(--shadow)}
-.cards{display:grid; gap:1rem; margin-block:1.5rem}
-@media (min-width:56rem){.cards.two{grid-template-columns:1fr 1fr}}
-.card h4{font-size:1.02rem; margin-bottom:.5rem}
-.card p{font-size:.905rem; color:var(--ink-2)}
-.card ul{margin:.55rem 0 0; padding-left:1.1rem; font-size:.885rem; color:var(--ink-2); display:flex; flex-direction:column; gap:.4rem}
-
-/* course header block */
-.course{border:1px solid var(--rule); border-radius:4px; background:var(--surface); overflow:hidden; margin-bottom:1.75rem; box-shadow:var(--shadow)}
-.course-top{padding:1.3rem 1.5rem; border-bottom:1px solid var(--rule); display:flex; flex-wrap:wrap; gap:1rem; align-items:flex-start; justify-content:space-between}
-.course-top h3{font-size:1.28rem; font-weight:600}
-.course-top .meta{font-size:.85rem; color:var(--muted); margin-top:.3rem}
-.badge{font-family:var(--mono); font-size:.66rem; letter-spacing:.09em; text-transform:uppercase; font-weight:600; padding:.32rem .6rem; border-radius:3px; white-space:nowrap}
-.badge.done{color:var(--accent-deep); background:var(--accent-wash)}
-.badge.live{color:var(--flag); background:var(--flag-wash)}
-.course-body{padding:1.3rem 1.5rem; display:flex; flex-direction:column; gap:1.1rem}
-.kv{display:grid; grid-template-columns:auto 1fr; gap:.4rem 1.1rem; font-size:.885rem}
-.kv dt{font-family:var(--mono); font-size:.68rem; letter-spacing:.07em; text-transform:uppercase; color:var(--muted); padding-top:.22rem; white-space:nowrap}
-.kv dd{margin:0; color:var(--ink-2)}
-
-/* ---------- charts ---------- */
-figure{margin:1.75rem 0 0; background:var(--surface); border:1px solid var(--rule); border-radius:4px; padding:1.25rem 1.4rem 1.1rem}
-figure figcaption{font-size:.83rem; color:var(--muted); margin-top:.9rem; line-height:1.5; max-width:60ch}
-.chart-title{font-family:var(--serif); font-size:1.02rem; font-weight:600; margin-bottom:.15rem}
-.chart-sub{font-size:.79rem; color:var(--muted); margin-bottom:1rem}
-
-.bars{display:flex; flex-direction:column; gap:.42rem}
-.bar-row{display:grid; grid-template-columns:minmax(2.5rem,auto) 1fr minmax(3.2rem,auto); align-items:center; gap:.85rem}
-.bar-lab{font-size:.815rem; color:var(--ink-2); line-height:1.3}
-.bar-track{position:relative; height:1.05rem; background:var(--surface-2); border-radius:2px}
-.bar-fill{position:absolute; inset-block:0; left:0; background:var(--accent); border-radius:0 4px 4px 0; min-width:2px; transition:width .5s cubic-bezier(.22,.61,.36,1)}
-.bar-fill.flagged{background:var(--flag)}
-.bar-val{font-family:var(--mono); font-size:.79rem; font-variant-numeric:tabular-nums; color:var(--ink-2); text-align:right}
-
-.dots{display:flex; flex-direction:column; gap:.05rem; position:relative}
-.dot-row{display:grid; grid-template-columns:minmax(0,1fr) 32% 2.9rem; align-items:center; gap:.9rem; padding:.28rem 0; border-radius:2px}
-.dot-row:hover{background:var(--surface-2)}
-.dot-lab{font-size:.8rem; color:var(--ink-2); line-height:1.3; display:flex; gap:.5rem}
-.dot-lab .qn{font-family:var(--mono); font-size:.7rem; color:var(--muted); min-width:1.1rem}
-.dot-scale{position:relative; height:1rem}
-.dot-track{position:absolute; inset-block:calc(50% - 1px) auto; height:2px; left:0; right:0; background:var(--rule)}
-.dot-mark{position:absolute; top:50%; width:10px; height:10px; margin:-5px 0 0 -5px; border-radius:50%; background:var(--accent); box-shadow:0 0 0 2px var(--surface)}
-.dot-mark.flagged{background:var(--flag)}
-.axis{display:flex; justify-content:space-between; font-family:var(--mono); font-size:.66rem; color:var(--muted); border-top:1px solid var(--rule); padding-top:.3rem}
-.dot-row:hover .axis{border-top-color:var(--rule)}
-.grp{font-family:var(--mono); font-size:.66rem; letter-spacing:.1em; text-transform:uppercase; color:var(--muted); margin:.85rem 0 .3rem; font-weight:600}
-.grp:first-child{margin-top:0}
-
-.slo-row{display:grid; grid-template-columns:minmax(9rem,15rem) 1fr auto; gap:.85rem; align-items:center; padding:.5rem 0}
-.thresh{position:absolute; top:-3px; bottom:-3px; width:2px; background:var(--ink); opacity:.5}
-.thresh-lab{position:absolute; top:-1.15rem; transform:translateX(-50%); font-family:var(--mono); font-size:.64rem; color:var(--muted); white-space:nowrap}
-
-.chart-tip{
-  position:fixed; z-index:60; pointer-events:none; opacity:0; transition:opacity .12s;
-  background:var(--ink); color:var(--ground); font-size:.78rem; line-height:1.4;
-  padding:.45rem .6rem; border-radius:3px; max-width:16rem; box-shadow:0 6px 20px -8px rgba(0,0,0,.5);
-}
-.chart-tip b{font-family:var(--mono); font-weight:600}
-.chart-tip.on{opacity:1}
-
-details.data{margin-top:.9rem; border-top:1px solid var(--rule); padding-top:.65rem}
-details.data summary{font-family:var(--mono); font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); cursor:pointer}
-details.data summary:hover{color:var(--ink)}
-details.data .tablewrap{margin-top:.7rem}
-
-/* callouts */
-.note{border-left:3px solid var(--accent); background:var(--accent-wash); padding:.85rem 1.05rem; border-radius:0 3px 3px 0; font-size:.9rem; color:var(--ink-2); max-width:var(--measure)}
-.note.flag{border-left-color:var(--flag); background:var(--flag-wash)}
-.note .t{display:block; font-family:var(--mono); font-size:.67rem; letter-spacing:.1em; text-transform:uppercase; font-weight:600; margin-bottom:.3rem; color:var(--ink)}
-
-.quotes{display:grid; gap:.85rem; margin-top:1.25rem}
-@media (min-width:52rem){.quotes{grid-template-columns:1fr 1fr}}
-blockquote{margin:0; background:var(--surface); border:1px solid var(--rule); border-left:3px solid var(--rule-strong); border-radius:0 3px 3px 0; padding:.9rem 1.1rem; font-family:var(--serif); font-size:.97rem; line-height:1.55; color:var(--ink-2)}
-blockquote.crit{border-left-color:var(--flag)}
-
-.pathlist{font-family:var(--mono); font-size:.775rem; color:var(--ink-2); display:flex; flex-direction:column; gap:.3rem; word-break:break-word}
-.pathlist span{color:var(--muted)}
-
-.toggle{
-  position:fixed; right:1.15rem; bottom:1.15rem; z-index:50;
-  font-family:var(--mono); font-size:.68rem; letter-spacing:.07em; text-transform:uppercase;
-  background:var(--surface); color:var(--ink-2); border:1px solid var(--rule-strong);
-  padding:.5rem .75rem; border-radius:3px; cursor:pointer; box-shadow:var(--shadow);
-}
-.toggle:hover{color:var(--ink); border-color:var(--accent)}
-
-@media (max-width:60rem){
-  .shell{grid-template-columns:1fr}
-  .rail{position:static; height:auto; border-right:0; border-bottom:1px solid var(--rule); padding:1.5rem 1.25rem}
-  nav ol{flex-direction:row; flex-wrap:wrap; gap:.25rem}
-  nav a{border-left:0; border-bottom:2px solid transparent; padding:.3rem .5rem}
-  nav a.on{border-left:0; border-bottom-color:var(--accent)}
-  nav .sub{display:none}
-  .rail-foot{display:none}
-  main{padding:2rem 1.25rem 4rem}
-}
-@media (max-width:34rem){
-  .dot-row{grid-template-columns:minmax(0,1fr) 3rem; gap:.35rem .8rem}
-  .dot-row > .dot-lab{grid-area:1/1/2/2}
-  .dot-row > .bar-val{grid-area:1/2/2/3}
-  .dot-row > .dot-scale{grid-area:2/1/3/3}
-  .dot-row > .axis{grid-area:2/1/3/3}
-  .figs{grid-template-columns:1fr 1fr}
-  figure{padding:1rem}
-}
-@media (prefers-reduced-motion: reduce){
-  *{animation:none !important; transition:none !important}
-}
-@media print{
-  .rail,.toggle{display:none}
-  .shell{display:block}
-  main{padding:0}
-  section{break-inside:auto; page-break-inside:auto}
-  figure,.course,.card{break-inside:avoid}
-  body{background:#fff; color:#000; font-size:11pt}
-}
-</style>
-
-<div class="shell">
-  <aside class="rail">
-    <div class="rail-id">
-      <span class="stamp">Teaching Portfolio</span>
-      <span class="name">Rex W. Sitti</span>
-      <span class="role">Assistant Professor of Economics<br>Strome College of Business<br>Old Dominion University</span>
-    </div>
-    <nav aria-label="Portfolio sections">
-      <ol>
-        <li><a href="#overview" class="on"><span class="n">01</span><span>Overview</span></a></li>
-        <li><a href="#spring-2026"><span class="n">02</span><span>Spring 2026</span></a></li>
-        <li class="sub"><a href="#econ-301"><span class="n"></span><span>ECON 301</span></a></li>
-        <li class="sub"><a href="#econ-707"><span class="n"></span><span>ECON 707/807</span></a></li>
-        <li><a href="#fall-2026"><span class="n">03</span><span>Fall 2026</span></a></li>
-        <li><a href="#statement"><span class="n">04</span><span>Reflective statement</span></a></li>
-        <li><a href="#development"><span class="n">05</span><span>Course development</span></a></li>
-        <li><a href="#redesign"><span class="n">06</span><span>16 &rarr; 8 week redesign</span></a></li>
-        <li><a href="#technology"><span class="n">07</span><span>Instructional technology</span></a></li>
-        <li><a href="#assessment"><span class="n">08</span><span>Program assessment</span></a></li>
-        <li><a href="#feedback"><span class="n">09</span><span>Student feedback</span></a></li>
-        <li><a href="#evidence"><span class="n">10</span><span>Evidence index</span></a></li>
-      </ol>
-    </nav>
-    <div class="rail-foot">
-      Annual review portfolio covering the courses taught since the last review: Spring 2026 and Fall 2026.<br><br><a href="https://r3xstar.github.io/RexSitti/">r3xstar.github.io/RexSitti</a>
-    </div>
-  </aside>
-
-  <main>
-  <div class="wrap">
-
-  <!-- ============ OVERVIEW ============ -->
-  <section id="overview">
-    <div class="masthead">
-      <span class="period">Review period &middot; Spring 2026 – Fall 2026</span>
-      <h1>Teaching Portfolio</h1>
-      <p class="sub">Course design, student outcomes, evaluations, and program assessment for four sections taught or in progress since the last review.</p>
+    <div class="section">
+        <h2>About Me</h2>
+        <p>
+            I am an Assistant Professor of Economics at the Strome College of Business, Old Dominion University. 
+            My work focuses on public economics, urban economics, and health economics, with a particular emphasis 
+            on homelessness, housing programs, and the effectiveness of safety net policies such as Medicaid and the Earned Income Tax Credit.
+        </p>
+        <p>
+            My research integrates administrative and geospatial data to answer policy-relevant questions and 
+            provide evidence for policymakers working to address societal challenges related to housing, health, and inequality.
+        </p>
     </div>
 
-    <div class="figs">
-      <div class="fig"><span class="v">4</span><span class="k">Sections in the review period</span></div>
-      <div class="fig"><span class="v">125</span><span class="k">Students across the review period</span></div>
-      <div class="fig"><span class="v">3</span><span class="k">New preparations</span></div>
-      <div class="fig"><span class="v">2</span><span class="k">16&#8209;to&#8209;8&#8209;week conversions</span></div>
-      <div class="fig"><span class="v">3&#8239;/&#8239;3</span><span class="k">MA program outcomes met</span></div>
-    </div>
-
-    <div class="tablewrap">
-      <table>
-        <caption>Courses in the review period</caption>
-        <thead>
-          <tr><th>Course</th><th>Term</th><th>Modality</th><th class="num">Enrolled</th><th>Status</th></tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="course-cell">ECON 301<br><span style="font-weight:400;color:var(--muted);font-size:.82rem">Managerial Economics</span></td>
-            <td>Spring 2026<br><span style="color:var(--muted);font-size:.82rem">16 weeks &middot; CRN 22713</span></td>
-            <td>Asynchronous online</td>
-            <td class="num">55</td>
-            <td>Complete</td>
-          </tr>
-          <tr>
-            <td class="course-cell">ECON 707/807<br><span style="font-weight:400;color:var(--muted);font-size:.82rem">Econometrics II</span></td>
-            <td>Spring 2026<br><span style="color:var(--muted);font-size:.82rem">16 weeks &middot; CRN 30988</span></td>
-            <td>In person, Thursday evening</td>
-            <td class="num">8</td>
-            <td>Complete</td>
-          </tr>
-          <tr>
-            <td class="course-cell">ECON 625<br><span style="font-weight:400;color:var(--muted);font-size:.82rem">Mathematical Economics</span></td>
-            <td>Fall 2026<br><span style="color:var(--muted);font-size:.82rem">8 weeks &middot; CRN 20705</span></td>
-            <td>Asynchronous online</td>
-            <td class="num">3</td>
-            <td>In progress</td>
-          </tr>
-          <tr>
-            <td class="course-cell">ECON 301<br><span style="font-weight:400;color:var(--muted);font-size:.82rem">Managerial Economics</span></td>
-            <td>Fall 2026<br><span style="color:var(--muted);font-size:.82rem">8 weeks &middot; CRN 20399</span></td>
-            <td>Asynchronous online</td>
-            <td class="num">59</td>
-            <td>In progress</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-
-  </section>
-
-  <!-- ============ SPRING 2026 ============ -->
-  <section id="spring-2026">
-    <div class="sec-head">
-      <span class="eyebrow">02 &middot; Spring 2026</span>
-      <h2>Courses taught</h2>
-      <p class="lede">Two sections, 63 students: one undergraduate, one graduate.</p>
-    </div>
-
-    <div id="econ-301" class="course">
-      <div class="course-top">
-        <div>
-          <h3>ECON 301 &middot; Managerial Economics</h3>
-          <div class="meta">Spring 2026 &middot; CRN 22713 &middot; Asynchronous online &middot; January 20 – April 30, 2026</div>
-        </div>
-        <span class="badge done">Complete</span>
-      </div>
-      <div class="course-body">
-        <dl class="kv">
-          <dt>Syllabus</dt><dd><a href="https://r3xstar.github.io/RexSitti/teaching/syllabi/econ301-spring-2026.pdf">ECON 301, Spring 2026 (PDF)</a></dd>
-          <dt>Enrollment</dt><dd>55 enrolled; 54 students received a final grade</dd>
-          <dt>Materials</dt><dd>Baye &amp; Prince, <em>Managerial Economics and Business Strategy</em> (2025 release), delivered through Canvas and McGraw-Hill Connect</dd>
-          <dt>Assessment</dt><dd>7 application-based activities (350 pts) &middot; 7 quizzes (350) &middot; 5 homework sets (500) &middot; case study midterm (300) &middot; comprehensive final exam (500)</dd>
-          <dt>Stated outcomes</dt><dd>Application of economic concepts (ten designated final-exam items) &middot; communication (case study, rubric-scored) &middot; data analysis (Excel problem, rubric-scored)</dd>
-        </dl>
-
-        <figure>
-          <div class="chart-title">Final grade distribution</div>
-          <div class="chart-sub">54 students &middot; mean 89.8%, median 90.2%, range 70.5–98.1%</div>
-          <div class="bars" data-chart="g301"></div>
-          <figcaption>No grade below C&#8209;. Concentrated in the A/B+ range, consistent with two attempts allowed on activities, quizzes and homework.</figcaption>
-          <details class="data"><summary>Data table</summary><div class="tablewrap" data-table="g301"></div></details>
-        </figure>
-
-        <figure>
-          <div class="chart-title">Performance against the syllabus outcome thresholds</div>
-          <div class="chart-sub">Share of students reaching 70% on each assessed artifact &middot; the syllabus standard is 75%</div>
-          <div class="bars" data-chart="slo301"></div>
-          <figcaption>Case Study 1 clears the standard; Case Study 2 does not. The final exam is a whole-instrument proxy, because the syllabus measure names ten multiple-choice items the gradebook export does not separate. The Excel data-analysis measure had no separate graded artifact this term.</figcaption>
-          <details class="data"><summary>Data table</summary><div class="tablewrap" data-table="slo301"></div></details>
-        </figure>
-      </div>
-    </div>
-
-    <div id="econ-707" class="course">
-      <div class="course-top">
-        <div>
-          <h3>ECON 707/807 &middot; Econometrics II: Time Series and Forecasting</h3>
-          <div class="meta">Spring 2026 &middot; CRN 30988 &middot; Thursday 6:00–8:40 pm, Constant 1009</div>
-        </div>
-        <span class="badge done">Complete</span>
-      </div>
-      <div class="course-body">
-        <dl class="kv">
-          <dt>Syllabus</dt><dd><a href="https://r3xstar.github.io/RexSitti/teaching/syllabi/econ707-807-spring-2026.pdf">ECON 707/807, Spring 2026 (PDF)</a></dd>
-          <dt>Enrollment</dt><dd>8 students</dd>
-          <dt>Materials</dt><dd>No required text. Diebold, <em>Forecasting in Economics, Business, Finance and Beyond</em>, and Hyndman &amp; Athanasopoulos, <em>Forecasting: Principles and Practice</em> (FPP3), both freely available. R and RStudio required; Posit Cloud offered as an alternative.</dd>
-          <dt>Assessment</dt><dd>5 homework sets (50 pts each) &middot; 3 exams (150 each, lowest dropped) &middot; forecasting project in three stages: pitch (50), data report (50), final forecast and evaluation report (350)</dd>
-          <dt>Outcomes</dt><dd>Mean 93.3%, median 96.7% &middot; 5 A, 2 A&#8209;, 1 C</dd>
-        </dl>
-
-        <figure>
-          <div class="chart-title">Mean score by assessment component</div>
-          <div class="chart-sub">Percentage of points available &middot; 8 students</div>
-          <div class="bars" data-chart="c707"></div>
-          <figcaption>Exam 3 is not performance: five of eight recorded a non-attempt, which the drop-lowest policy makes costless. The project stages were attempted by nearly everyone and scored above 92%.</figcaption>
-          <details class="data"><summary>Data table</summary><div class="tablewrap" data-table="c707"></div></details>
-        </figure>
-
-        <div class="cards two">
-          <div class="card">
-            <h4>What the project asks for</h4>
-            <p>A non-technical memo and an econometric handbook, assessed against seven required elements.</p>
-            <ul>
-              <li>Motivation, and the asymmetric cost of a forecast that is too high versus too low</li>
-              <li>Justification of the explanatory variables</li>
-              <li>Modeling and data choices: lag structure, aggregation, differencing, logs</li>
-              <li>Breakpoints where the data-generating process differs</li>
-              <li>An explicit judgment on whether the forecast is credible</li>
-              <li>Out-of-sample results reported as MAPE and RMSE</li>
-            </ul>
-          </div>
-          <div class="card">
-            <h4>The VAR rubric in use</h4>
-            <p>150 points across six components, weighted by analytical demand, applied with written component-level feedback rather than a score alone.</p>
-            <ul>
-              <li>Data preparation and cleaning, 20 pts</li>
-              <li>Visualization and exploratory analysis, 20</li>
-              <li>Stationarity analysis and transformations, 25</li>
-              <li>VAR selection, estimation and diagnostics, 35</li>
-              <li>Model explanation (IRF and FEVD), 25</li>
-              <li>Five-period forecast and interpretation, 25</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ FALL 2026 ============ -->
-  <section id="fall-2026">
-    <div class="sec-head">
-      <span class="eyebrow">03 &middot; Fall 2026, in progress</span>
-      <h2>Two accelerated sections</h2>
-      <p class="lede">62 students, first eight-week session, August 24 to October 16, 2026. Outcomes not yet available; the design work is done.</p>
-    </div>
-
-    <div class="course">
-      <div class="course-top">
-        <div>
-          <h3>ECON 625 &middot; Mathematical Economics</h3>
-          <div class="meta">Fall 2026 &middot; CRN 20705 &middot; Graduate &middot; New preparation</div>
-        </div>
-        <span class="badge live">In progress</span>
-      </div>
-      <div class="course-body">
-        <dl class="kv">
-          <dt>Syllabus</dt><dd><a href="https://r3xstar.github.io/RexSitti/teaching/syllabi/econ625-fall-2026.pdf">ECON 625, Fall 2026 (PDF)</a></dd>
-          <dt>Enrollment</dt><dd>3, small enough to change the design: Zoom hours are effectively individual, and one disengaged student moves any measure by a third</dd>
-          <dt>Origin</dt><dd>Developed with ODU Global as part of the Forward Focused initiative: an asynchronous eight-week graduate course built from a legacy set of in-person materials</dd>
-          <dt>Format</dt><dd>A fifteen-week graduate course delivered in eight weeks, fully asynchronous. Seven content modules plus a Module 0 orientation; four modules cover three textbook chapters each.</dd>
-          <dt>Text</dt><dd>Chiang &amp; Wainwright, <em>Fundamental Methods of Mathematical Economics</em>, 4th ed. Chapter 19 is deliberately excluded.</dd>
-          <dt>Assessment</dt><dd>Five problem sets, 80 pts each, all five counted with no dropped score (400 pts, 40%) &middot; cumulative midterm on Modules 1–4 (300, 30%) &middot; cumulative final on Modules 1–7 (300, 30%). Both exams open-book, three hours once started, with handwritten derivations uploaded as a PDF.</dd>
-          <dt>Design decisions</dt><dd>An ungraded self-check diagnostic in Module 0, posted before the add/drop deadline, so students can judge the prerequisite fit themselves. Drop-in Zoom hours Tuesdays 2:00–3:30 pm ET. Problem sets returned within five days, exams within seven.</dd>
-        </dl>
-      </div>
-    </div>
-
-    <div class="course">
-      <div class="course-top">
-        <div>
-          <h3>ECON 301 &middot; Managerial Economics, eight-week</h3>
-          <div class="meta">Fall 2026 &middot; CRN 20399 &middot; Asynchronous online &middot; Converted from the 16-week section</div>
-        </div>
-        <span class="badge live">In progress</span>
-      </div>
-      <div class="course-body">
-        <dl class="kv">
-          <dt>Syllabus</dt><dd><a href="https://r3xstar.github.io/RexSitti/teaching/syllabi/econ301-fall-2026-8week.pdf">ECON 301, Fall 2026 eight-week (PDF)</a></dd>
-          <dt>Enrollment</dt><dd>59, the largest section this period, four more than the Spring section it was condensed from</dd>
-          <dt>Structure</dt><dd>Six Canvas modules. Modules 1–5 run one week each; Module 6 spans weeks 6–8, covering oligopoly, pricing and information in sequence. Week 4 is reserved for the case study midterm with no competing activity or homework.</dd>
-          <dt>Assessment</dt><dd>6 activity-based roleplays (300 pts, 16.7%) &middot; 6 homework sets (600, 33.3%) &middot; case study midterm (300, 16.7%) &middot; comprehensive final (600, 33.3%). 1,800 points total.</dd>
-        </dl>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ STATEMENT ============ -->
-  <section id="statement">
-    <div class="sec-head">
-      <span class="eyebrow">04 &middot; Reflective statement</span>
-      <h2>What I am trying to do, and what changed</h2>
-      <p class="lede">Goals, changes, and failures. <a href="https://r3xstar.github.io/RexSitti/teaching/reflective-statement.pdf">Full statement as PDF</a>.</p>
-    </div>
-
-    <div class="prose">
-      <p>I want students to be able to <em>do</em> something at the end, not to recognize a term. That shows up as a design choice in every course, and it is where the courses are hardest and where they have most clearly failed.</p>
-
-      <h3>ECON 301: making the assessment match the claim</h3>
-      <p>The course is required for the major, and the students who take it asynchronously are mostly working seniors: thirteen of the sixteen survey respondents held a job. A course like that easily becomes a semester of multiple-choice practice in a publisher platform. So the midterm is two full case studies rather than a timed exam, and each week puts a concept into a decision before the quiz asks about it.</p>
-      <p>The class did well: median 90.2%, no grade below C&#8209;, 98% clearing 70% on the final. Critical thinking came back at 4.44 of 5.</p>
-      <p><strong>The case studies are also where the class did worst.</strong> Case Study 1 reached my syllabus standard; Case Study 2 did not, at 67%. The instrument I trust most is the one students met least well. That reads as scaffolding, not ability: the rubric arrives with no graded intermediate step, so a student who misreads the assignment finds out only when it is graded. The eight-week section now applies the rubric to a required outline first.</p>
-
-      <h3>ECON 707/807: a project, staged</h3>
-      <p>The course is built around a forecasting project in three stages: a pitch, a data-and-model report, and a final forecast written for a non-specialist. Splitting it matters because forecasting is a sequence of judgment calls, and a student who submits only at the end never defends a choice while it is still changeable.</p>
-      <p>All three MA outcomes cleared the threshold, at 100%, 87.5% and 87.5%. That is not the interesting result. Seven of eight scored above 90% on every measure, so the point allocations are not separating competent from excellent work. And the one student who fell short did so on <em>both</em> project outcomes while meeting the exam standard. The failure mode was disengagement from a multi-stage assignment, not an inability to specify a model. Staging the project earlier makes a stall visible while there is still time to intervene.</p>
-
-      <h3>What did not work</h3>
-      <ul>
-        <li><strong>An exam it was rational to skip.</strong> ECON 707/807 drops the lowest of three exams, and five of eight recorded a non-attempt on Exam 3, correctly, given the policy. An assessment most students can skip is not an assessment. The eight-week version has two exams, both counted.</li>
-        <li><strong>Platform friction I did not catch fast enough.</strong> Connect links on the Canvas dashboard resolved to unpublished modules, and some assignments did not match the chapter under discussion. An asynchronous student cannot route around that. I should have audited links weekly, not at module open.</li>
-        <li><strong>A pacing complaint I take seriously.</strong> &ldquo;Less material to review each week&rdquo;, from a sixteen-week section, is a warning worth carrying into two eight-week ones. Fall ECON 301 clears a full week for the midterm; ECON 625 states the weekly hour cost before add/drop.</li>
-      </ul>
-
-      <h3>Where this is going</h3>
-      <p>Three pieces of work next: convert the ECON 707 project checklists into weighted rubrics; get item-level Canvas data for the ECON 301 measures, written against ten final-exam questions I cannot currently isolate; and finish the eight-week ECON 707/807 build, whose course site is already standing.</p>
-    </div>
-  </section>
-
-  <!-- ============ DEVELOPMENT ============ -->
-  <section id="development">
-    <div class="sec-head">
-      <span class="eyebrow">05 &middot; Course development</span>
-      <h2>New preparations</h2>
-      <p class="lede">Materials developed for each course beyond the syllabus.</p>
-    </div>
-
-    <div class="cards two">
-      <div class="card">
-        <h4>ECON 625: built for asynchronous delivery</h4>
-        <p>Built from existing in-person materials into an eight-week asynchronous course.</p>
+    <div class="section">
+        <h2>Research Interests</h2>
         <ul>
-          <li>12 module lecture PDFs across seven modules, plus 6 slide decks</li>
-          <li>17 presenter- and narrator-note documents written to accompany the recorded lectures</li>
-          <li>Recorded module videos, a Module 1 review packet and worked illustrations</li>
-          <li>Five practice exercise sets with solutions</li>
-          <li>An ungraded prerequisite diagnostic and a formula sheet supplied with both exams</li>
+            <li>Urban Economics</li>
+            <li>Public Economics</li>
+            <li>Health Economics</li>
+            <li>Housing Policy</li>
+            <li>Homelessness &amp; Safety Net Programs</li>
         </ul>
-      </div>
-      <div class="card">
-        <h4>ECON 707/807: a course that runs on code</h4>
-        <p>Every technique is taught as working R code, and the course materials are that code.</p>
+    </div>
+
+    <div class="section">
+        <h2>Publications &amp; Working Papers</h2>
+        <p>Selected works include:</p>
         <ul>
-          <li>118 R, R&nbsp;Markdown and Quarto teaching files</li>
-          <li>10 reveal.js lecture decks authored for the course site</li>
-          <li>5 homework sets, three with published R solution notebooks</li>
-          <li>3 exams authored in R Markdown with reproducible data</li>
-          <li>In-class scripts for ARDL, VAR, ECM, cointegration and spatial models, debugged against real series</li>
+            <li>Housing, Homelessness, and Urban Policy Analysis</li>
+            <li>Effects of Medicaid and Peer Support Programs on Health Outcomes</li>
+            <li>Impacts of the Earned Income Tax Credit on Household Spending</li>
+            <li>Property Value Effects of Homeless Shelters (King County, WA)</li>
         </ul>
-      </div>
-      <div class="card">
-        <h4>ECON 301: a taught course, maintained</h4>
-        <p>Inherited in structure, rebuilt in delivery.</p>
-        <ul>
-          <li>14 recorded topic videos covering production and costs, principal–agent, game theory and market structure</li>
-          <li>13 unit tests written to the chapter sequence</li>
-          <li>Three case studies with discussion questions, solution keys and teaching notes: Seattle parking pricing, AndroGel pay-for-delay, Whole Foods</li>
-          <li>A shared 100-point case study rubric used across sections</li>
+    </div>
+
+    <div class="section">
+        <h2>Teaching</h2>
+        <p>
+            I teach Managerial Economics (ECON 301), Econometrics II (ECON 707/807), Mathematical Economics (ECON 625),
+            and Urban Economics (ECON 445W/545W). I incorporate real-world content, spatial data, and modern empirical
+            methods to help students apply economic concepts to policy issues.
+        </p>
+        <ul class="links">
+            <li><a href="teaching/">Teaching portfolio</a> <span>&middot; courses, materials, outcome data, and reflective statement</span></li>
+            <li><a href="https://r3xstar.github.io/econ707/">ECON 707/807 course site</a> <span>&middot; open lecture notes and lab materials</span></li>
         </ul>
-      </div>
-      <div class="card">
-        <h4>Preparation sequence</h4>
-        <ul>
-          <li>ECON 625: built for its first offering in Fall 2026, in a new modality and a compressed term</li>
-          <li>ECON 707/807: built for Spring 2026, then rebuilt as an eight-week asynchronous course</li>
-          <li>ECON 301: taught over sixteen weeks in Spring 2026, converted to eight weeks for Fall 2026</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ REDESIGN ============ -->
-  <section id="redesign">
-    <div class="sec-head">
-      <span class="eyebrow">06 &middot; Format redesign</span>
-      <h2>Two sixteen-week courses, rebuilt for eight</h2>
-      <p class="lede">Both courses were halved in calendar length while keeping their learning outcomes. The sixteen-week and eight-week versions are set side by side below.</p>
     </div>
 
-    <div class="tablewrap">
-      <table>
-        <caption>What the conversion changed</caption>
-        <thead><tr><th>Course</th><th>16-week version</th><th>8-week version</th><th>Rationale</th></tr></thead>
-        <tbody>
-          <tr>
-            <td class="course-cell">ECON 301</td>
-            <td>7 activities, 7 quizzes, 5 homework sets, case study midterm (choose 2 of 3), final. 2,000 pts.</td>
-            <td>6 activities, 6 homework sets, single-case midterm, comprehensive final. 1,800 pts.</td>
-            <td>Quizzes dropped rather than compressed. They duplicated what the activities already assessed, and cutting them bought back a week of student time without losing coverage.</td>
-          </tr>
-          <tr>
-            <td class="course-cell">ECON 707/807</td>
-            <td>5 homework sets, 3 exams with lowest dropped, project in 3 stages due weeks 10, 13 and 15. Weekly in-person meeting.</td>
-            <td>5 homework sets, midterm on Modules 1–3 plus a comprehensive final, project staged at weeks 3, 5 and 7. Fully asynchronous.</td>
-            <td>Spatial modeling dropped; cointegration and VAR/IRF kept, because they carry the program outcomes. The project moves earlier so a stalled student is visible before the midterm.</td>
-          </tr>
-        </tbody>
-      </table>
+    <div class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:rsitti@odu.edu">rsitti@odu.edu</a></p>
+        <p>GitHub: <a href="https://github.com/R3xStar">github.com/R3xStar</a></p>
     </div>
 
-    <div class="cards two" style="margin-top:1.5rem">
-      <div class="card">
-        <h4>Decisions the eight-week format required</h4>
-        <ul>
-          <li>Which topics carry the learning outcomes and which are enrichment</li>
-          <li>Where graded checkpoints move so that intervention remains possible</li>
-          <li>Which policies (dropped scores, unlimited attempts) no longer work without recovery time</li>
-          <li>How the weekly hour cost is stated before the add/drop deadline</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Written into both syllabi</h4>
-        <p>Both eight-week syllabi state the workload explicitly, 15 to 18 hours per week, and both state that modules stay open so a student may work ahead but may not fall behind.</p>
-        <p style="margin-top:.7rem"><a href="https://r3xstar.github.io/RexSitti/teaching/syllabi/econ707-807-8week-draft.pdf">Draft eight-week ECON 707/807 syllabus (PDF)</a> &middot; <a href="https://r3xstar.github.io/RexSitti/teaching/syllabi/econ301-fall-2026-8week.pdf">ECON 301 eight-week syllabus (PDF)</a></p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ TECHNOLOGY ============ -->
-  <section id="technology">
-    <div class="sec-head">
-      <span class="eyebrow">07 &middot; Instructional technology and open materials</span>
-      <h2>A public course site, and no required textbook</h2>
-      <p class="lede">A course site anyone can read, built on open tools, for a course with no textbook cost.</p>
-    </div>
-
-    <div class="card">
-      <h4>ECON 707/807 course site &middot; <a href="https://r3xstar.github.io/econ707" target="_blank" rel="noopener">r3xstar.github.io/econ707</a></h4>
-      <p>A Quarto site published from GitHub Pages, holding the week-by-week plan and every lecture deck. Graded work stays in Canvas; the site is the open half of the course.</p>
-      <div class="tablewrap" style="margin-top:1rem">
-        <table>
-          <caption>Eight week pages, live</caption>
-          <thead><tr><th class="num">Wk</th><th>Module</th><th>Reading</th><th>Due</th></tr></thead>
-          <tbody>
-            <tr><td class="num">1</td><td>Visuals, Data, and the Forecasting Workflow</td><td>Diebold 1–2; FPP3 2</td><td>HW 1</td></tr>
-            <tr><td class="num">2</td><td>Naïve and Benchmark Forecasts</td><td>Diebold 4–6</td><td>HW 2</td></tr>
-            <tr><td class="num">3</td><td>Autocorrelation and Stationarity</td><td>Diebold 7–8</td><td>HW 3, Project Pitch</td></tr>
-            <tr><td class="num">4</td><td>AR and MA Models; ARMA Forecasting</td><td>Diebold 9–12</td><td>Midterm</td></tr>
-            <tr><td class="num">5</td><td>Trend, Seasonality, and Decomposition</td><td>Diebold 13–14</td><td>HW 4, Project Data</td></tr>
-            <tr><td class="num">6</td><td>X Variables, Cointegration, Dynamic Regression</td><td>Diebold 15–16; FPP3 9</td><td>HW 5</td></tr>
-            <tr><td class="num">7</td><td>Multivariate Forecasting: VAR and Impulse Responses</td><td>FPP3 11</td><td>Final Project</td></tr>
-            <tr><td class="num">8</td><td>Review and Comprehensive Final Examination</td><td>None</td><td>Final Exam</td></tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-
-    <div class="cards two" style="margin-top:1.25rem">
-      <div class="card">
-        <h4>Zero-cost course materials</h4>
-        <ul>
-          <li>ECON 707/807 requires no textbook. Diebold's <em>Forecasting</em> and FPP3 are both free and linked in Canvas.</li>
-          <li>R, RStudio and Posit Cloud are free, and the syllabus names the cloud option so a student without a capable laptop is not blocked.</li>
-          <li>ECON 510, taught immediately before this period, moved to OpenStax for the same reason; the practice carried forward.</li>
-        </ul>
-      </div>
-      <div class="card">
-        <h4>Platform work behind the courses</h4>
-        <ul>
-          <li>Canvas and McGraw-Hill Connect integration for both ECON 301 sections, including module-level link auditing after students reported broken assignment links</li>
-          <li>Reproducible R Markdown assignments and exams, published with solution notebooks students can run</li>
-          <li>Spatial econometrics R Markdown teaching materials developed for the graduate sequence</li>
-          <li>Version-controlled course site with published build output, so the site can be restored or forked</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============ ASSESSMENT ============ -->
-  <section id="assessment">
-    <div class="sec-head">
-      <span class="eyebrow">08 &middot; Program assessment</span>
-      <h2>Course design tied to program outcomes</h2>
-      <p class="lede">ECON 707/807 carries three MA program outcomes. I proposed the measures, applied them, and reported the results.</p>
-    </div>
-
-    <figure>
-      <div class="chart-title">MA program outcome attainment, ECON 707/807, Spring 2026</div>
-      <div class="chart-sub">Share of students scoring 80% or higher &middot; n = 8 &middot; objective: at least 80%</div>
-      <div class="bars" data-chart="slo707"></div>
-      <figcaption>All three met the objective. The one student below threshold on outcomes 2 and 3 met the exam standard on outcome 1. The shortfall was a missing data report and a 69.7% final report, not a failure of technique.</figcaption>
-      <details class="data"><summary>Data table</summary><div class="tablewrap" data-table="slo707"></div></details>
-    </figure>
-
-    <div class="tablewrap" style="margin-top:1.5rem">
-      <table>
-        <caption>Measures as proposed</caption>
-        <thead><tr><th>Outcome</th><th>Artifact</th><th>Rubric weighting</th></tr></thead>
-        <tbody>
-          <tr>
-            <td class="course-cell">1 · Research and Data Analytical Skills</td>
-            <td>Exam questions requiring estimation and interpretation of a multi-equation/VAR system, scored under the course's best-two-of-three policy</td>
-            <td>Formulation and estimation 30% · identification and model issues 40% · interpretation and economic significance 30%</td>
-          </tr>
-          <tr>
-            <td class="course-cell">2 · Critical Thinking and Problem-Solving</td>
-            <td>Forecasting project parts 1 and 2: the pitch and the data/model report</td>
-            <td>Application of time-series methods 40% · depth on limitations and adjustments 40% · quality of forecasts 20%</td>
-          </tr>
-          <tr>
-            <td class="course-cell">3 · Communication Skills</td>
-            <td>Final forecasting project and evaluation report, written for a non-specialist decision-maker</td>
-            <td>Clarity on complex results 40% · visuals and language 40% · policy relevance 20%</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-
-    <div class="prose" style="margin-top:1.5rem">
-      <h3>Two changes I proposed to the measures</h3>
-      <p><strong>Write the drop-lowest policy into the measure language.</strong> The draft framework ties outcome 1 to a single designated exam question. Because the course drops the lowest of three exams, a single-exam measure understates performance for students who sit only two, and five of eight students recorded a non-attempt the gradebook correctly excludes. The measure should name the exam score under the drop-lowest policy so the artifact is unambiguous in the next cycle.</p>
-      <p><strong>Convert the project checklists into weighted rubrics.</strong> The forecasting project is currently assessed against a list of required elements with a single point total. The terminal VAR analysis already uses a weighted 150-point rubric; extending that structure to the project is the change I intend to make before the next run.</p>
-    </div>
-  </section>
-
-  <!-- ============ FEEDBACK ============ -->
-  <section id="feedback">
-    <div class="sec-head">
-      <span class="eyebrow">09 &middot; Student feedback</span>
-      <h2>What students said, and what I did about it</h2>
-      <p class="lede">The Student Opinion Survey for ECON 301, Spring 2026: 16 of 55 students responded, a 29% response rate, with no opt-outs.</p>
-    </div>
-
-    <figure>
-      <div class="chart-title">Student Opinion Survey item means</div>
-      <div class="chart-sub">ECON 301, Spring 2026 &middot; 1 = strongly disagree, 5 = strongly agree &middot; 16 respondents</div>
-      <div data-chart="sos"></div>
-      <figcaption>Every item at or above 4.0. The one item at 4.00, on using the full class period, is an in-person question in an asynchronous course; nine of sixteen marked it not applicable. Delivery items appear twice because the instrument splits them across two response groups.</figcaption>
-      <details class="data"><summary>Data table</summary><div class="tablewrap" data-table="sos"></div></details>
-    </figure>
-
-    <div class="figs">
-      <div class="fig"><span class="v">4.50</span><span class="k">Overall, the instructor is an effective teacher</span></div>
-      <div class="fig"><span class="v">4.54</span><span class="k">The instructor was prepared for each class</span></div>
-      <div class="fig"><span class="v">4.44</span><span class="k">The course required me to think critically</span></div>
-      <div class="fig"><span class="v">4.64</span><span class="k">The delivery technology was reliable</span></div>
-    </div>
-
-    <h3 style="font-size:1.1rem;margin-top:2rem">In their words</h3>
-    <div class="quotes">
-      <blockquote>&ldquo;The midterm being two case studies was fantastic, and something that I wish more classes would copy.&rdquo;</blockquote>
-      <blockquote>&ldquo;What I liked most was how the instructor broke down complex economic concepts into more understandable parts. The explanations and examples made the material more approachable and easier to follow, especially for more difficult topics.&rdquo;</blockquote>
-      <blockquote>&ldquo;The class helped me think critically by requiring me to analyze different scenarios, interpret data, and understand the reasoning behind economic decisions rather than just focusing on the final answer.&rdquo;</blockquote>
-      <blockquote>&ldquo;The instructor responded well to emails. Also, the instructor helped with my accommodations well, allowing me to learn more effectively.&rdquo;</blockquote>
-      <blockquote class="crit">&ldquo;The McGraw Hill links on the Canvas dashboard never linked to the correct assignments. Every time, it said &lsquo;This assignment is part of an unpublished module and is not available yet.&rsquo;&rdquo;</blockquote>
-      <blockquote class="crit">&ldquo;Less material to review each week because it was a little overwhelming.&rdquo;</blockquote>
-      <blockquote class="crit">&ldquo;Instructor needs to better identify expectations for assignments.&rdquo;</blockquote>
-      <blockquote class="crit">&ldquo;I would like to have had more application activities like the ones given, possibly a project that uses the knowledge we gained.&rdquo;</blockquote>
-    </div>
-
-    <div class="tablewrap" style="margin-top:1.75rem">
-      <table>
-        <caption>Feedback acted on</caption>
-        <thead><tr><th>What students reported</th><th>What changed</th></tr></thead>
-        <tbody>
-          <tr><td>Connect links resolving to unpublished modules; some Connect assignments not matching the chapter under discussion</td><td>Module-level link audit before each module opens, rather than at course build. Activities and homework are now tied one-to-one to a single module in the eight-week section.</td></tr>
-          <tr><td>Weekly workload felt heavy</td><td>Quizzes removed from the eight-week design; week 4 cleared entirely for the case study midterm; the syllabus states the real weekly hour cost up front.</td></tr>
-          <tr><td>Expectations for assignments not clear enough</td><td>The case study rubric is applied to a required outline before the graded submission, so the standard is visible while the work is still changeable.</td></tr>
-          <tr><td>Wanted more application activities and a project</td><td>Application-based roleplays retained as a full component (300 pts) in the eight-week section, one per module, rather than being the first thing cut for time.</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </section>
-
-  <!-- ============ EVIDENCE ============ -->
-  <section id="evidence">
-    <div class="sec-head">
-      <span class="eyebrow">10 &middot; Evidence index</span>
-      <h2>Source files behind every figure</h2>
-      <p class="lede">Paths relative to the ODU Classes folder. Every number here is computed from one of these files.</p>
-    </div>
-
-    <div class="tablewrap">
-      <table>
-        <thead><tr><th>Claim</th><th>Source file</th></tr></thead>
-        <tbody>
-          <tr><td>ECON 301 Spring 2026 enrollment, grades, component scores</td><td class="pathlist">Econ 301/Grades/2026-09-01T0952_Grades-202520_SPRING_ECON301_22713.csv</td></tr>
-          <tr><td>ECON 301 Spring 2026 syllabus, outcomes, schedule</td><td class="pathlist">Econ 301/Syllabus/ECON_301_Syllabus_Spring_2026.docx</td></tr>
-          <tr><td>ECON 301 Student Opinion Survey, Spring 2026</td><td class="pathlist">Econ 301/Econ 301 Student Opinion Survey Spring 2026.pdf</td></tr>
-          <tr><td>ECON 301 Fall 2026 eight-week design</td><td class="pathlist">Econ 301/Syllabus/ECON_301_Syllabus_Fall_2026_8Week_V2.docx</td></tr>
-          <tr><td>ECON 707/807 Spring 2026 gradebook</td><td class="pathlist">Econ 707/Exams/2026-08-26T1659_Grades-202520_SPRING_ECON807_30988.csv</td></tr>
-          <tr><td>ECON 707/807 Spring 2026 syllabus</td><td class="pathlist">Econ 707/Syllabus/Econ_707_807_Syllabus_V3-ODU-383GR44.pdf</td></tr>
-          <tr><td>ECON 707/807 eight-week syllabus</td><td class="pathlist">Econ 707/Syllabus/econ707_8week.tex &middot; econ707_8week.pdf</td></tr>
-          <tr><td>MA program SLO results and rubrics</td><td class="pathlist">Econ 707/Other/ECON_707_807_SLO_Assessment_Results_Spring2026.docx</td></tr>
-          <tr><td>This portfolio, published</td><td class="pathlist">r3xstar.github.io/RexSitti/teaching &middot; syllabi and the reflective statement are linked from the sections above</td></tr>
-          <tr><td>ECON 707/807 course site source and build</td><td class="pathlist">Econ 707/econ707/ &middot; published at r3xstar.github.io/econ707</td></tr>
-          <tr><td>ECON 625 Fall 2026 syllabus and schedule</td><td class="pathlist">Econ 625/ECON_625_Syllabus_Revised (2).pdf</td></tr>
-          <tr><td>ECON 625 lecture materials and presenter notes</td><td class="pathlist">Econ 625/Lecture Slides/ &middot; Econ 625/Notes/ &middot; Econ 625/Exercises/</td></tr>
-          <tr><td>ECON 301 case studies, rubric and teaching notes</td><td class="pathlist">Econ 301/Case Study Assignments/</td></tr>
-        </tbody>
-      </table>
-    </div>
-
-  </section>
-
-  </div>
-  </main>
 </div>
 
-<button class="toggle" id="themeBtn" type="button" aria-label="Switch colour theme">Theme</button>
-<div class="chart-tip" id="tip" role="status" aria-live="polite"></div>
+<footer>
+    &copy; <span id="year"></span> Rex W. Sitti &bull; Old Dominion University
+</footer>
 
 <script>
-(function(){
-  "use strict";
-
-  /* ---------------- data ---------------- */
-  var DATA = {
-    g301: {
-      unit:"students", total:54,
-      rows:[["A",19],["A−",12],["B+",13],["B",4],["B−",2],["C+",3],["C−",1]],
-      cols:["Final grade","Students","Share"]
-    },
-    slo301: {
-      unit:"%", max:100, threshold:75, thresholdLabel:"75% standard",
-      rows:[
-        ["Final exam (whole instrument)",98.1,"53 of 54 students at or above 70%"],
-        ["Case Study 1",77.8,"42 of 54 students at or above 70%"],
-        ["Case Study 2",66.7,"36 of 54 students at or above 70%"]
-      ],
-      flagBelow:75,
-      cols:["Artifact","% at or above 70%","Count"]
-    },
-    c707: {
-      unit:"%", max:100,
-      rows:[
-        ["Exam 1",95.5,"8 of 8 attempted"],
-        ["Exam 2",79.2,"8 of 8 recorded, including one score of zero"],
-        ["Exam 3",30.4,"3 of 8 attempted — lowest exam is dropped"],
-        ["Project pitch",92.2,"8 of 8 submitted"],
-        ["Project data report",95.1,"7 of 8 submitted"],
-        ["Final project and report",93.7,"8 of 8 submitted"]
-      ],
-      flagRows:["Exam 3"],
-      cols:["Component","Mean % of points","Note"]
-    },
-    slo707: {
-      unit:"%", max:100, threshold:80, thresholdLabel:"80% objective",
-      rows:[
-        ["1 · Research and data analysis",100.0,"8 of 8 students"],
-        ["2 · Critical thinking",87.5,"7 of 8 students"],
-        ["3 · Communication",87.5,"7 of 8 students"]
-      ],
-      cols:["Outcome","% scoring 80%+","Count"]
-    },
-    sos: {
-      groups:[
-        {name:"Course", items:[
-          [1,"The course materials, exams, projects and/or papers required me to think critically",4.44,16],
-          [2,"To get good grades I had to know the material in the syllabus and discussed in class",4.44,16],
-          [3,"Overall, I have learned or benefited from this class",4.38,16]
-        ]},
-        {name:"Instructor", items:[
-          [4,"In week one the instructor provided documents clearly explaining content, assignments, grading and policies",4.44,16],
-          [5,"The instructor welcomed questions and class participation",4.40,16],
-          [6,"The instructor was enthusiastic about the subject matter",4.38,16],
-          [7,"The instructor was available for consultation and helpful",4.33,16],
-          [8,"The instructor used the full time period allotted for the class",4.00,15],
-          [9,"The instructor's presentations were informative",4.33,16],
-          [10,"Overall, the instructor is an effective teacher",4.50,16],
-          [11,"The instructor was prepared for each class",4.54,15]
-        ]},
-        {name:"Delivery method", items:[
-          [12,"Technical support for my asynchronous online course was helpful",4.75,5],
-          [13,"Technical support for my asynchronous online course was helpful",4.56,11],
-          [14,"The delivery technology was reliable and consistently available",4.60,5],
-          [15,"The delivery technology was reliable and consistently available",4.64,11],
-          [16,"I would recommend taking asynchronous online courses",4.20,5],
-          [17,"I would recommend taking asynchronous online courses",4.55,11]
-        ]}
-      ],
-      flagItems:[8]
-    }
-  };
-
-  /* ---------------- tooltip ---------------- */
-  var tip = document.getElementById("tip");
-  function showTip(html, ev){
-    tip.innerHTML = html;
-    tip.classList.add("on");
-    var pad = 14, w = tip.offsetWidth, h = tip.offsetHeight;
-    var x = ev.clientX + pad, y = ev.clientY - h - 8;
-    if (x + w > window.innerWidth - 8) x = ev.clientX - w - pad;
-    if (y < 8) y = ev.clientY + pad;
-    tip.style.left = x + "px";
-    tip.style.top = y + "px";
-  }
-  function hideTip(){ tip.classList.remove("on"); }
-  function bindTip(el, html){
-    el.addEventListener("mousemove", function(ev){ showTip(html, ev); });
-    el.addEventListener("mouseleave", hideTip);
-    el.setAttribute("tabindex","0");
-    el.addEventListener("focus", function(){
-      var r = el.getBoundingClientRect();
-      showTip(html, {clientX:r.left + r.width/2, clientY:r.top});
-    });
-    el.addEventListener("blur", hideTip);
-  }
-
-  function esc(s){ return String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
-
-  /* ---------------- bar charts ---------------- */
-  function buildBars(host, key){
-    var d = DATA[key];
-    var max = d.max || Math.max.apply(null, d.rows.map(function(r){ return r[1]; }));
-    var frag = document.createDocumentFragment();
-
-    d.rows.forEach(function(r){
-      var name = r[0], val = r[1], note = r[2] || "";
-      var pct = (val / max) * 100;
-      var row = document.createElement("div");
-      row.className = "bar-row";
-
-      var lab = document.createElement("div");
-      lab.className = "bar-lab";
-      lab.textContent = name;
-
-      var track = document.createElement("div");
-      track.className = "bar-track";
-
-      var fill = document.createElement("div");
-      var flagged = (d.flagBelow != null && val < d.flagBelow) ||
-                    (d.flagRows && d.flagRows.indexOf(name) > -1);
-      fill.className = "bar-fill" + (flagged ? " flagged" : "");
-      fill.style.width = "0%";
-      track.appendChild(fill);
-
-      if (d.threshold != null){
-        var th = document.createElement("div");
-        th.className = "thresh";
-        th.style.left = ((d.threshold / max) * 100) + "%";
-        track.appendChild(th);
-      }
-
-      var v = document.createElement("div");
-      v.className = "bar-val";
-      v.textContent = d.unit === "%" ? val.toFixed(1) + "%" :
-                      (d.total ? val + " (" + Math.round(val / d.total * 1000) / 10 + "%)" : val);
-
-      row.appendChild(lab); row.appendChild(track); row.appendChild(v);
-      frag.appendChild(row);
-
-      var tipHtml = "<b>" + esc(name) + "</b><br>" +
-        (d.unit === "%" ? val.toFixed(1) + "% " : val + " " + (d.unit || "")) +
-        (note ? "<br>" + esc(note) : "") +
-        (d.total ? "<br>" + Math.round(val / d.total * 1000) / 10 + "% of the class" : "");
-      bindTip(row, tipHtml);
-    });
-
-    host.appendChild(frag);
-
-    if (d.threshold != null && d.thresholdLabel){
-      var legend = document.createElement("div");
-      legend.style.cssText = "display:flex;align-items:center;gap:.45rem;margin-top:.75rem;font-family:var(--mono);font-size:.68rem;color:var(--muted)";
-      legend.innerHTML = '<span style="display:inline-block;width:2px;height:.85rem;background:currentColor;opacity:.7"></span>' + esc(d.thresholdLabel);
-      host.appendChild(legend);
-    }
-
-    // animate in
-    requestAnimationFrame(function(){
-      var fills = host.querySelectorAll(".bar-fill");
-      d.rows.forEach(function(r,i){
-        fills[i].style.width = ((r[1] / max) * 100) + "%";
-      });
-    });
-  }
-
-  /* ---------------- SOS dot chart ---------------- */
-  function buildSos(host){
-    var d = DATA.sos, lo = 3.5, hi = 5;
-    d.groups.forEach(function(g){
-      var h = document.createElement("div");
-      h.className = "grp";
-      h.textContent = g.name;
-      host.appendChild(h);
-
-      g.items.forEach(function(it){
-        var qn = it[0], text = it[1], mean = it[2], n = it[3];
-        var flagged = d.flagItems.indexOf(qn) > -1;
-
-        var row = document.createElement("div");
-        row.className = "dot-row";
-
-        var lab = document.createElement("div");
-        lab.className = "dot-lab";
-        lab.innerHTML = '<span class="qn">' + qn + '</span><span>' + esc(text) + '</span>';
-
-        var val = document.createElement("div");
-        val.className = "bar-val";
-        val.textContent = mean.toFixed(2);
-
-        var scale = document.createElement("div");
-        scale.className = "dot-scale";
-        var track = document.createElement("div");
-        track.className = "dot-track";
-        var mark = document.createElement("div");
-        mark.className = "dot-mark" + (flagged ? " flagged" : "");
-        mark.style.left = (((mean - lo) / (hi - lo)) * 100) + "%";
-        scale.appendChild(track); scale.appendChild(mark);
-
-        row.appendChild(lab); row.appendChild(scale); row.appendChild(val);
-        host.appendChild(row);
-
-        bindTip(row, "<b>Item " + qn + " — " + mean.toFixed(2) + "</b><br>" + esc(text) + "<br>" + n + " responses");
-      });
-    });
-
-    var axisRow = document.createElement("div");
-    axisRow.className = "dot-row";
-    axisRow.style.pointerEvents = "none";
-    var axis = document.createElement("div");
-    axis.className = "axis";
-    axis.innerHTML = "<span>3.5</span><span>4.0</span><span>4.5</span><span>5.0</span>";
-    axisRow.appendChild(document.createElement("div"));
-    axisRow.appendChild(axis);
-    axisRow.appendChild(document.createElement("div"));
-    host.appendChild(axisRow);
-  }
-
-  /* ---------------- data tables ---------------- */
-  function buildTable(host, key){
-    var d = DATA[key], html = "<table><thead><tr>";
-    if (key === "sos"){
-      html += "<th>#</th><th>Item</th><th class='num'>Mean</th><th class='num'>N</th></tr></thead><tbody>";
-      d.groups.forEach(function(g){
-        g.items.forEach(function(it){
-          html += "<tr><td class='num'>" + it[0] + "</td><td>" + esc(it[1]) +
-                  "</td><td class='num'>" + it[2].toFixed(2) + "</td><td class='num'>" + it[3] + "</td></tr>";
-        });
-      });
-    } else {
-      d.cols.forEach(function(c,i){ html += "<th" + (i ? " class='num'" : "") + ">" + esc(c) + "</th>"; });
-      html += "</tr></thead><tbody>";
-      d.rows.forEach(function(r){
-        html += "<tr><td>" + esc(r[0]) + "</td><td class='num'>" +
-                (d.unit === "%" ? r[1].toFixed(1) + "%" : r[1]) + "</td><td class='num'>" +
-                (d.total ? (Math.round(r[1] / d.total * 1000) / 10) + "%" : esc(r[2] || "")) + "</td></tr>";
-      });
-    }
-    html += "</tbody></table>";
-    host.innerHTML = html;
-  }
-
-  document.querySelectorAll("[data-chart]").forEach(function(el){
-    var k = el.getAttribute("data-chart");
-    if (k === "sos") buildSos(el); else buildBars(el, k);
-  });
-  document.querySelectorAll("[data-table]").forEach(function(el){
-    buildTable(el, el.getAttribute("data-table"));
-  });
-
-  /* ---------------- scrollspy ---------------- */
-  var links = Array.prototype.slice.call(document.querySelectorAll("nav a"));
-  var targets = links.map(function(a){ return document.querySelector(a.getAttribute("href")); });
-  function spy(){
-    var best = 0, bestTop = -Infinity, y = 120;
-    targets.forEach(function(t,i){
-      if (!t) return;
-      var top = t.getBoundingClientRect().top - y;
-      if (top <= 0 && top > bestTop){ bestTop = top; best = i; }
-    });
-    links.forEach(function(a,i){ a.classList.toggle("on", i === best); });
-  }
-  window.addEventListener("scroll", spy, {passive:true});
-  spy();
-
-  /* ---------------- theme ---------------- */
-  var btn = document.getElementById("themeBtn");
-  btn.addEventListener("click", function(){
-    var root = document.documentElement;
-    var cur = root.getAttribute("data-theme");
-    if (!cur){
-      cur = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
-    }
-    root.setAttribute("data-theme", cur === "dark" ? "light" : "dark");
-  });
-})();
+    document.getElementById("year").textContent = new Date().getFullYear();
 </script>
 
 </body>
